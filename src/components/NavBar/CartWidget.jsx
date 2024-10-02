@@ -3,7 +3,7 @@ import cartIcon from "../../assets/cart.png"
 const CartWidget = () => {
     return (
         <div>
-            <img src={cartIcon} width={100}></img>
+            <i className="fas fa-shopping-cart" style={{ fontSize: '2rem' }}></i>
             <p>1</p>
         </div>
     )

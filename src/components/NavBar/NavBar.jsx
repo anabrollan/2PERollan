@@ -5,7 +5,7 @@ const NavBar = () => {
     return (
         <nav className="navbar">
             <div className="brand">
-            <h2>Kalandra</h2>
+            <h2>Kalandra®</h2>
             </div>
             
             <ul>
