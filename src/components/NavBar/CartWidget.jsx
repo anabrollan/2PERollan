@@ -4,6 +4,7 @@ const CartWidget = () => {
     return (
         <div>
             <img src={cartIcon} width={100}></img>
+            <p>1</p>
         </div>
     )
 }
