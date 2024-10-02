@@ -1,6 +1,10 @@
-const ItemListContainer = () => {
+const ItemListContainer = (props) => {
+    console.log(props)
     return (
-        <div>ItemListContainer</div>
+        <div>
+            <h2>{props.inicio}</h2>
+            <h2>{props.sobreMi}</h2>
+        </div>
     )
 }
 
