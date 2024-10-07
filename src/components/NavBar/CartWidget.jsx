@@ -4,7 +4,7 @@ const CartWidget = () => {
     return (
         <div className="cartwidget">
             <IoMdCart className="cart-icon"/>
-            <p>1</p>
+            <p className="numeroDeItems">1</p>
         </div>
     )
 }

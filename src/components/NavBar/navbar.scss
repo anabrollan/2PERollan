@@ -8,6 +8,8 @@
     ul{
         display: flex;
         list-style: none;
+        font-size: 20px;
+        color: #8EAF9D;
         li{
             padding: 0 20px;
         }
@@ -25,6 +27,17 @@ body {
 .cartwidget{
     display:flex;
     .cart-icon{
-    font-size: 40px;
+    font-size: 30px;
+    color: #8EAF9D;
     }
+}
+
+h2 {
+    padding: 20px;
+    text-align: center;
+}
+
+.numeroDeItems {
+    font-size: 20px;
+    color: #8EAF9D;
 }
