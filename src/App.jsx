@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
       <NavBar />
-      <ItemListContainer saludo="¡Holi! Te doy la bienvenida al sitio web de Kalandra®" />
+      <ItemListContainer saludo="¡Holi! Te doy la bienvenida a la tienda online de Kalandra®" />
     </div>
   )
 }

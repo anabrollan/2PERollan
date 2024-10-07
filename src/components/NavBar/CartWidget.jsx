@@ -1,9 +1,9 @@
-import cartIcon from "../../assets/cart.png"
+import { IoMdCart } from "react-icons/io";
 
 const CartWidget = () => {
     return (
-        <div>
-            <i className="fas fa-shopping-cart" style={{ fontSize: '2rem' }}></i>
+        <div className="cartwidget">
+            <IoMdCart className="cart-icon"/>
             <p>1</p>
         </div>
     )
