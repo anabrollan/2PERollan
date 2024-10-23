@@ -1,20 +1,20 @@
 const products = [
     {
-        id: "PO001",
-        name: "Postal Un día a la vez",
+        id: "LA001",
+        name: "Libreta anillada Crayones",
         description: "",
-        stock: 10,
-        price: 500,
-        image: "",
-        category: "postales",
+        stock: 1,
+        price: 8000,
+        image: "/img/anilladacrayones.webp",
+        category: "libretas anilladas",
     },
     {
-        id: "LA001",
-        name: "Libreta Un día a la vez",
+        id: "LA002",
+        name: "Libreta anillada Letras",
         description: "",
-        stock: 2,
+        stock: 1,
         price: 8000,
-        image: "",
+        image: "/img/anilladaletras.webp",
         category: "libretas anilladas",
     },
     {
@@ -23,7 +23,7 @@ const products = [
         description: "",
         stock: 1,
         price: 15000,
-        image: "",
+        image: "/img/belgafrida.jpg",
         category: "libretas cosidas",
     },
     {
@@ -32,7 +32,7 @@ const products = [
         description: "",
         stock: 1,
         price: 15000,
-        image: "",
+        image: "/img/coptamapas.jpg",
         category: "libretas cosidas",
     }
 ]
