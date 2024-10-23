@@ -1,13 +1,13 @@
 .container-app {
-    display: grid;                      /* Activa el grid layout */
-    gap: 20px;                          /* Espacio entre los elementos */
-    padding: 20px;                      /* Padding alrededor de todos los elementos */
-    justify-items: center;              /* Centra los elementos horizontalmente */
+    display: grid;                      
+    gap: 20px;                          
+    padding: 20px;                      
+    justify-items: center;              
   }
   
   .container-app > div {
-    padding: 20px;                      /* Padding interno de cada div */
-    border: 1px solid #ccc;             /* Agrega un borde para visualizar mejor los elementos */
-    text-align: center;                 /* Centrar el contenido de texto dentro del div */
+    padding: 20px;                      
+    border: 1px solid #ccc;           
+    text-align: center;                
   }
   
