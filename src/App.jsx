@@ -8,9 +8,10 @@ function App() {
 
 
   return (
-    <div>
+    <div className='container-app'>
       <NavBar />
       <ItemListContainer saludo="¡Holi! Te doy la bienvenida a la tienda online de Kalandra®" />
+      <ItemDetailContainer />
     </div>
   )
 }

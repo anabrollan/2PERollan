@@ -1,11 +1,22 @@
-function ItemDetailContainer() {
+import { useState, useEffect } from "react";
+import { getProducts } from "../../data/data";
+import ItemDetail from "./ItemDetail.jsx"
+
+const ItemDetailContainer = () => {
+    const [product, setProduct] = useState ({})
+
+    useEffect( ()=> {
+        getProducts()
+        .then( (data)=> {
+            const findProduct = data.find( (product)=> product.id === "LA001" )
+            setProduct(findProduct)
+        })
+    },[])
+
     return (
-      <div>
-        <h1>Detalle del Item</h1>
-        {/* Aquí va el contenido del componente */}
-      </div>
+        <ItemDetail product={product} />
     )
-  }
+}
   
-  export default ItemDetailContainer; // Asegúrate de tener esta línea
+  export default ItemDetailContainer
   

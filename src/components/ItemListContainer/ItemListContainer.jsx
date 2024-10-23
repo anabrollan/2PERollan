@@ -6,7 +6,8 @@ import ItemList from "./ItemList.jsx"
 const ItemListContainer = ( {saludo} ) => {
     const [products, setProducts] = useState([])
 
-    useEffect( ()=> {getProducts ()
+    useEffect( ()=> {
+        getProducts ()
         .then((data) => {
             setProducts(data)
         })
