@@ -6,3 +6,8 @@
     margin: 0 auto;
 }
 
+.card {
+    width: 300px;  /* O el ancho que quieras */
+    margin: 0 auto;  /* Centrado horizontal */
+}
+

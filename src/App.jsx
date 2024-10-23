@@ -14,6 +14,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={ <ItemListContainer saludo="¡Bienvenidos!" /> } />
+        <Route path="/category/:idCategory" element={ <ItemListContainer saludo="Holi" /> } />
       </Routes>
       </BrowserRouter>
     </div>

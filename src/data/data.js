@@ -6,7 +6,7 @@ const products = [
         stock: 1,
         price: 8000,
         image: "/img/anilladacrayones.webp",
-        category: "libretas anilladas",
+        category: "anilladas",
     },
     {
         id: "LA002",
@@ -15,7 +15,7 @@ const products = [
         stock: 1,
         price: 8000,
         image: "/img/anilladaletras.webp",
-        category: "libretas anilladas",
+        category: "anilladas",
     },
     {
         id: "LC001",
@@ -24,7 +24,7 @@ const products = [
         stock: 1,
         price: 15000,
         image: "/img/belgafrida.jpg",
-        category: "libretas cosidas",
+        category: "cosidas",
     },
     {
         id: "LC002",
@@ -33,7 +33,7 @@ const products = [
         stock: 1,
         price: 15000,
         image: "/img/coptamapas.jpg",
-        category: "libretas cosidas",
+        category: "cosidas",
     }
 ]
 
