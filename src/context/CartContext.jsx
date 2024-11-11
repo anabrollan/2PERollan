@@ -24,8 +24,12 @@ const CartProvider = ( { children } ) => {
         setCart(filterProducts)
     }
 
+    const deleteCart = () =>{
+        setCart([])
+    }
+
     return(
-        <CartContext.Provider value={ { cart, addProductInCart, totalQuantity, totalPrice, deleteProductById } } >
+        <CartContext.Provider value={ { cart, addProductInCart, totalQuantity, totalPrice, deleteProductById, deleteCart } } >
             {children}
         </CartContext.Provider>
     )
