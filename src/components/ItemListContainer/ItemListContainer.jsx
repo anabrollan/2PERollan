@@ -9,12 +9,12 @@ const ItemListContainer = ({ saludo }) => {
     const [products, setProducts] = useState([]);
     const { idCategory } = useParams();
 
-    const getProducts = () => {
+    const getProducts = () => { 
         const productsRef = collection(db, "products");
         getDocs(productsRef)
             .then((dataDb) => {
-                const productsArray = dataDb.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
-                setProducts(productsArray);
+                const productsDb = dataDb.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
+                setProducts(productsDb);
             })
             .catch((error) => console.error("No se ha encontrado el producto", error));
     };
