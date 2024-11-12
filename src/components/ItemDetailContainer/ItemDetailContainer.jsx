@@ -3,7 +3,7 @@ import { doc, getDoc } from "firebase/firestore";
 import db from "../../db/db.js";
 import { getProducts } from "../../data/data";
 import { useParams } from "react-router-dom";
-import ItemDetail from "../ItemDetail/ItemDetail";
+import ItemDetail from "./ItemDetail.jsx";
 
 const ItemDetailContainer = () => {
     const [product, setProduct] = useState ({})
@@ -28,7 +28,6 @@ const { idProduct } = useParams()
     return (
         <ItemDetail product={product} />
     )
-    
 }
   
   export default ItemDetailContainer

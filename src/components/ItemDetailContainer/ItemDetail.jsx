@@ -4,7 +4,7 @@ import ItemCount from "../ItemCount/ItemCount.jsx";
 import { CartContext } from "../../context/CartContext.jsx";
 import { useContext } from "react";
 
-function ItemDetail({ product }) {
+function ItemDetail() {
   const { idProduct } = useParams();
   const product = products.find((item) => item.id === idProduct);
 
