@@ -1,8 +1,10 @@
+import ItemCount from "../ItemCount/ItemCount.jsx";
+import { useContext, useState } from "react"
+import { CartContext } from "../../context/CartContext.jsx";
+import { Link } from "react-router-dom";
+import "./ItemDetail.css"
 import { useParams } from "react-router-dom";
 import { products } from "../../data/data.js"; 
-import ItemCount from "../ItemCount/ItemCount.jsx";
-import { CartContext } from "../../context/CartContext.jsx";
-import { useContext } from "react";
 
 function ItemDetail() {
   const { idProduct } = useParams();
