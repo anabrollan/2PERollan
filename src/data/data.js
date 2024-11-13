@@ -35,7 +35,7 @@ export const products = [
         image: "/img/coptamapas.jpg",
         category: "cosidas",
     }
-];
+]
 
 const getProducts = () => {
     return new Promise ((resolve, reject) => {

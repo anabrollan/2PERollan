@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Item = ({ product }) => {
   return (
@@ -9,7 +9,7 @@ const Item = ({ product }) => {
     <p>Precio: ${product.price}</p>
 </Link>
 
-  );
+  )
 }
 
-export default Item;
+export default Item
