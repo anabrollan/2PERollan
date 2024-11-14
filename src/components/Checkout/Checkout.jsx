@@ -1,5 +1,11 @@
 import React from 'react'
 import { useState } from 'react'
+import FormCheckout from './FormCheckout'
+import { useContext } from 'react'
+import { CartContext } from "../../context/CartContext"
+import { Timestamp, addDoc, collection } from 'firebase/firestore'
+import db from "../../db/db.js"
+import { Link } from 'react-router-dom'
 
 const Checkout = () => {
   const [dataForm, setDataForm] = useState ({
@@ -8,28 +14,53 @@ const Checkout = () => {
     email: ""
   })
 
+  const [idOrder, setIdOrder] = useState(null)
+
+  const { cart, totalPrice, deleteCart } = useContext(CartContext)
+
   const handleChangeInput = (event) => {
     setDataForm( { ...dataForm, [event.target.name]: event.target.value } )
   }
 
   const handleSubmitForm = (event) => {
     event.preventDefault()
+
+    const order = {
+      date: Timestamp.fromDate( new Date() ),
+      buyer: {...dataForm},
+      products: [...cart],
+      total: totalPrice()
+    }
+
+    uploadOrder(order)
+
+  }
+
+  const uploadOrder = (newOrder) => {
+    const ordersRef = collection(db, "orders")
+    addDoc(ordersRef, newOrder)
+    .then( (response)=> setIdOrder(response.id) )
+    .finally( ()=> {
+      deleteCart()
+    } )
   }
 
   return (
     <div>
-      <form onSubmit={handleSubmitForm}>
-        <label>Nombre completo: </label>
-        <input type="text" name="fullname" value={dataForm.fullname} onChange={handleChangeInput} />
-
-        <label>Teléfono: </label>
-        <input type="number" name="phone" value={dataForm.phone} onChange={handleChangeInput} />
-
-        <label>Correo: </label>
-        <input type="email" name="email" value={dataForm.email} onChange={handleChangeInput} />
-
-        <button type="submit">Terminar pedido</button>
-      </form>
+      {
+        idOrder === null ? (
+          <FormCheckout
+          dataForm={dataForm}
+          handleChangeInput={handleChangeInput}
+          handleSubmitForm={handleSubmitForm}/>
+        ) : (
+          <div>
+            <h2>¡Gracias por tu compra!</h2>
+            <p>Número de pedido: {idOrder}</p>
+            <Link to="/">Volver al inicio</Link>
+          </div>
+        )
+      }
     </div>
   )
 }
