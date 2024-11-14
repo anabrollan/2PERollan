@@ -40,6 +40,7 @@ const Checkout = () => {
     const ordersRef = collection(db, "orders")
     addDoc(ordersRef, newOrder)
     .then( (response)=> setIdOrder(response.id) )
+    .catch( (error)=> console.log() )
     .finally( ()=> {
       deleteCart()
     } )
