@@ -6,6 +6,7 @@ import { CartProvider } from './context/CartContext'
 import Cart from './components/Cart/Cart'
 import Checkout from './components/Checkout/Checkout.jsx'
 import './App.css'
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
