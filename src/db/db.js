@@ -1,5 +1,5 @@
-import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
+import { initializeApp } from "firebase/app"
+import { getFirestore } from "firebase/firestore"
 
 const firebaseConfig = {
   apiKey: "AIzaSyBlKY45VvBJAXeFlJIiYeYsmIJanjQTZVU",
@@ -8,10 +8,9 @@ const firebaseConfig = {
   storageBucket: "anarollanpf.firebasestorage.app",
   messagingSenderId: "938330617350",
   appId: "1:938330617350:web:1eb81dda671c7ad9173587"
-};
+}
 
-// Initialize Firebase
-initializeApp(firebaseConfig);
+initializeApp(firebaseConfig)
 
 const db = getFirestore()
 
