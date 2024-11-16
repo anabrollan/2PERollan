@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import FormCheckout from './FormCheckout'
+import FormCheckout from './FormCheckout.jsx'
 import { useContext } from 'react'
 import { CartContext } from "../../context/CartContext"
 import { Timestamp, addDoc, collection } from 'firebase/firestore'
