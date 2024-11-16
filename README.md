@@ -1,11 +1,13 @@
-# React + Vite
+# Kalandra E-commerce
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción
+### Se trata de un proyecto de tienda online para Kalandra, taller de encuadernación artesanal y diseño.
 
-Currently, two official plugins are available:
+### Consta de varios productos con stock disponible para compra, carrito de compras funcional hasta emitir la orden (sin pasarela de pago) y form para recibir los datos del cliente.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# 1PERollan
-# 1PERollan
-# 1PERollan
+## Dependencias
+### `firebase` `react` `react-dom` `react-icons` `react-router-dom` `react-toastify` `sass` `yup`
+
+## Contacto
+<a href="mailto:anabrollan@gmail.com">Correo electrónico</a><br>
+<a href="https://www.linkedin.com/in/ana-roll%C3%A1n-804b9384/">LinkedIn</a>

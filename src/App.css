@@ -1,13 +1,12 @@
 .container-app {
-    display: grid;                      
-    gap: 20px;                          
-    padding: 20px;                      
-    justify-items: center;              
-  }
-  
-  .container-app > div {
-    padding: 20px;                      
-    border: 1px solid #ccc;           
-    text-align: center;                
-  }
-  
+  display: grid;                      
+  gap: 20px;                          
+  padding: 20px;                      
+  justify-items: center;              
+}
+
+.container-app > div {
+  padding: 20px;                      
+  border: 1px solid #ccc;           
+  text-align: center;                
+}
