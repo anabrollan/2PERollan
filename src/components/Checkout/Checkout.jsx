@@ -7,6 +7,8 @@ import { Timestamp, addDoc, collection } from 'firebase/firestore'
 import db from "../../db/db.js"
 import { Link } from 'react-router-dom'
 import validateForm from '../../utils/validateForm.js'
+import { toast } from 'react-toastify'
+import { TbPlayerStop } from 'react-icons/tb'
 
 const Checkout = () => {
   const [dataForm, setDataForm] = useState ({
@@ -36,10 +38,10 @@ const Checkout = () => {
     try {
       const response = await validateForm(dataForm)
       if(response.status === "error") throw new Error(response.message)
-        console.log("validación sin errores")
+        toast.success("Completando el pedido")
       uploadOrder(order)
     } catch (error) {
-      console.log(error)
+      toast.error(error.message)
     }
 
 
